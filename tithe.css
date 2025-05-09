@@ -6,17 +6,17 @@
     }
   
     #scriptures {
-      background-color: #e0e30e;
+      background-color: #2e0ee3;
       padding: 15px;
       border-radius: 10px;
       position: relative;
-    top: 25vh;
+      top: 24vh;
     }
   
     #scriptures p {
-      font-size: 16px;
+      font-size: 19px;
       margin: 10px 0;
-      color: #333;
+      color: #e2d9d9;
     }
   
     #scriptures button {
@@ -32,30 +32,33 @@
       padding: 15px;
       border-radius: 10px;
       border: 1px solid #ddd;color: #ddd;
-      background-color: #eef1ee;
-      color: #0b0b0b;
+      color: #f0ecec;
+      background-color: #2a07db;
     }
   
     form label {
       display: block;
-      font-size: 16px;
+      font-size: 18px;
       margin-bottom: 10px;
+      position: relative;
+      left: 5vw;
     }
   
     input[type="tel"] {
       width: 90%;
       padding: 8px;
-      font-size: 16px;
+      font-size: 13px;
+      border-radius: 15px;
     }
   
     button[type="submit"] {
-      background-color: green;
+      background-color: #1ca91e;
       color: white;
       padding: 10px;
       font-size: 16px;
       border: none;
       border-radius: 5px;
-      width: 100%;
+      width: 60%;
     }
   
     #thankyou {
@@ -82,8 +85,24 @@
         background-color: #333;
       }
       input[type="checkbox"] {
-  transform: scale(1.5); /* Increase size by 1.5x */
-  margin-right: 8px;
+  transform: scale(1.5);
+  accent-color: transparent; /* Keeps inside color default or empty */
+  border: 2px solid #00ff4c; /* Blue border (Bootstrap primary) */
+  border-radius: 4px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  font-size: 12px;
+  color: #e3e8ed;
 }
 
   }
